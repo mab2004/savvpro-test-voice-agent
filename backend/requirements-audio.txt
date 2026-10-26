@@ -1,0 +1,8 @@
+# OPTIONAL fully-offline audio engines (no API keys, no paid services).
+# The backend works without these: the React frontend falls back to the browser's
+# built-in Web Speech API for speech-to-text and text-to-speech.
+#
+#   pip install -r requirements-audio.txt
+#
+pyttsx3>=2.90            # offline TTS (SAPI5 on Windows, NSSpeech on macOS, eSpeak on Linux)
+faster-whisper>=1.0      # offline STT (downloads a small Whisper model on first use)

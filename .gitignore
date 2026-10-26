@@ -1,0 +1,41 @@
+# Python virtual environments & bytecode
+.venv/
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# SQLite runtime databases (re-seeded automatically on startup)
+backend/data/*.db
+backend/data/*.db-journal
+backend/data/*.db-wal
+*.db
+*.db-journal
+
+# Node / Frontend dependencies & build outputs
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+*.tsbuildinfo
+.vite/
+npm-debug.log*
+
+# Environment variables & secrets (NEVER commit keys/tokens)
+.env
+.env.*
+*.pem
+*.key
+
+# OS, Editor & Temporary Scratch Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+mwg_guides.md
+node-v*/
+.local/
